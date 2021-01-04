@@ -1,0 +1,64 @@
+.carousel{
+    min-height: 240px;
+    padding: 40px;
+    border-radius: 2px;
+    text-align: center;
+    align-items: center;
+}
+
+.carousel p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.carousel-indicators li {
+     display: none;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    color: $color-white;
+}
+
+.carousel-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.control-button {
+    font-size: 60px;
+}
+
+.rating ion-icon {
+    color: $color-estrellas;
+    font-size: 26px;
+}
+
+.comentario-user{
+    max-width: 240px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.comentario-user h6 {
+    margin-bottom: 0px;
+}
+
+.comentario-user img {
+    border-radius: 50%;
+    max-width: 50px;
+}
+
+#redesSociales {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+   }
+
+.redes{
+    color: $colores-titulos-secundario;
+    font-size: 40px;
+}
+
+.socialmedia{
+ text-decoration: none;
+}

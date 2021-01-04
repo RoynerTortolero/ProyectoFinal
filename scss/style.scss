@@ -1,0 +1,49 @@
+@import 'componets/header';
+@import 'componets/servicios';
+@import 'componets/quienesSomos';
+@import 'componets/ubicacion';
+@import 'componets/comentariosyRedes';
+@import 'font/font';
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(93, 186, 214, 0.644);
+}
+
+.titulo {
+    color: $colores-titulos;
+    font-size: 3em;
+    -webkit-text-stroke: 1px black;
+    font-family: $fuente;
+    text-align: center;
+}
+
+section{
+    padding: 30px;
+}
+
+p{
+    font-family: $fuente;
+    text-align: center;
+}
+
+@media (max-width: 500px){
+    .logo {
+        display: none;
+    }
+    .lugares-detalles h2 {
+        font-size: 20px;
+    }
+    .lugares-detalles p {
+        display: none;
+    }
+    .control-button {
+        font-size: 30px;
+    }
+}
+
