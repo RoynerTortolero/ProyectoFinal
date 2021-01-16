@@ -6,24 +6,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styleReserva.css">
-    <link rel="shortcut icon" href="Imagenes/logoIco.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="Imagenes/favicon.jpeg" type="image/x-icon" />
     <title>Reserva</title>
 </head>
 <body>
     <h1>Reserva</h1>
-</body>
-<form action="">   
+    <form action="enviar.php" method="POST">   
         <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" placeholder="Nombre">
+        <input type="text" name="nombre" placeholder="Nombre"  required="">
         <br><br>
         <label for="apellido">Apellido:</label>
-        <input type="text" name="apellido" placeholder="Apellido">
+        <input type="text" name="apellido" placeholder="Apellido" required="">
         <br><br>
         <label for="documento_Id">Documento:</label>
-        <input type="text" name="documento_Id" placeholder="Documento de Identidad">
+        <input type="text" name="documento_Id" placeholder="Documento de Identidad" required="">
         <br><br>
         <label for="email">Email:</label>
-        <input type="email" name="email" placeholder="ejemplo@gmail.com">
+        <input type="email" name="email" placeholder="ejemplo@gmail.com" required="">
+        <br><br>
+        <label for="telefono">Numero de Teléfono:</label>
+        <input type="text" name="numero_telefono" placeholder="Documento de Identidad" required="">
         <br><br>
         <label for="sexo">Hombre:</label>
         <input type="radio" name="sexo">
@@ -39,14 +41,12 @@
         <option value="">KrostyBurger (2)</option>
       </select><br><br>
         <label for="comentario">Comentario:</label><br>
-        <textarea name="comentario" id="" cols="70" rows="5"></textarea>
+        <textarea name="comentario" id="" cols="70" rows="5" required=""></textarea>
         <br> <br>
         <input type="submit" value="Enviar" class="boton">
         <input type="reset" value="Borrar" class="boton">
-        
-        
-
     </fieldset>
-
 </form>
+</body>
+
 </html>

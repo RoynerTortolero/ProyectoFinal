@@ -2,11 +2,18 @@
 @import 'font/font';
 
 .logo {
-    height: 131px;
+    height: 200px;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+
+.logo:hover{
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
 }
 
 .header {
-    width: 100%;
+    min-width: 100%;
     min-height: 100vh;
     background: {
         image:url(../Imagenes/banner.jpg);
@@ -35,33 +42,37 @@
 }
 
 .anclas {
+    color: white;
     text-decoration: none;
     font-family: $fuente;
     font-size: $size-anclas;
-    text-decoration: none;
     margin: 15px;
     text-transform: uppercase;
-    -webkit-text-stroke: 0.5px white;
+    transition: all 0.8s;
+    transform: scale(1.1)
 
 }
 .navbar-light .navbar-nav .nav-link {
     color: $color-white;
 }
 
+.navbar-light .navbar-nav .nav-link:hover {
+    color: $color-white;
+}
+
 .navbar-light .navbar-toggler {
-    color: $colores-titulos-secundario;
-    border-color: $colores-titulos-secundario;
+    color: $color-white;
+    border-color: $color-white;
 }
 
 .anclas:hover {
-    background-color: $colores-titulos-secundario;
-    color: white;
-    background-color: black;
-    text-decoration: underline;
+    background-color: $color-terceriario;
+    transition: all 0.8s;
+    transform: scale(1.2)
 }
 
 .text-header {
-    min-height: 100vh;
+    min-height: 60vh;
     color: $color-terceriario;
     -webkit-text-stroke: 1px white;
     font-family: $fuente;

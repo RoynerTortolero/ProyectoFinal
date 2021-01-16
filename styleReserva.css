@@ -43,6 +43,13 @@ legend {
     color:white;
 }
 
+textarea {
+    min-width: 630px;
+    max-width: 630px;
+    min-height: 100px;
+    max-height: 100px;
+}
+
 .boton{
     font-size: 1.5em;
 }
@@ -50,4 +57,13 @@ legend {
 .boton:hover{
     background-color: black;
     color: white;
+}
+@media (max-width: 500px){
+    textarea {
+    min-width: 320px;
+    max-width: 320px;
+    }
+    form label {
+        font-size: 1.5em;
+    }
 }

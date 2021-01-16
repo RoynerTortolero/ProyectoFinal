@@ -32,9 +32,14 @@ p{
     text-align: center;
 }
 
-@media (max-width: 500px){
+@media (max-width: 1024px) {
+    .header{
+      background-image: url(../Imagenes/responsive.custom.jpg);
+      background-size:100vw 100vh;
+      text-align: right;
+    }
     .logo {
-        display: none;
+        height: 70px;
     }
     .lugares-detalles h2 {
         font-size: 20px;
@@ -46,4 +51,3 @@ p{
         font-size: 30px;
     }
 }
-

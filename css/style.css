@@ -1,8 +1,14 @@
 .logo {
-  height: 131px; }
+  height: 200px;
+  -webkit-transition: 1s linear;
+  transition: 1s linear; }
+
+.logo:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg); }
 
 .header {
-  width: 100%;
+  min-width: 100%;
   min-height: 100vh;
   background-image: url(../Imagenes/banner.jpg);
   background-repeat: no-repeat;
@@ -25,29 +31,32 @@
   color: black; }
 
 .anclas {
+  color: white;
   text-decoration: none;
   font-family: "Gochi Hand", cursive;
   font-size: 1.3em;
-  text-decoration: none;
   margin: 15px;
   text-transform: uppercase;
-  -webkit-text-stroke: 0.5px white; }
+  transition: all 0.8s;
+  transform: scale(1.1); }
 
 .navbar-light .navbar-nav .nav-link {
   color: white; }
 
+.navbar-light .navbar-nav .nav-link:hover {
+  color: white; }
+
 .navbar-light .navbar-toggler {
-  color: black;
-  border-color: black; }
+  color: white;
+  border-color: white; }
 
 .anclas:hover {
-  background-color: black;
-  color: white;
-  background-color: black;
-  text-decoration: underline; }
+  background-color: #111107;
+  transition: all 0.8s;
+  transform: scale(1.2); }
 
 .text-header {
-  min-height: 100vh;
+  min-height: 60vh;
   color: #111107;
   -webkit-text-stroke: 1px white;
   font-family: "Gochi Hand", cursive;
@@ -166,7 +175,7 @@
 #redesSociales {
   position: fixed;
   bottom: 0;
-  right: 0; }
+  left: 10px; }
 
 .redes {
   color: black;
@@ -197,9 +206,13 @@ p {
   font-family: "Gochi Hand", cursive;
   text-align: center; }
 
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
+  .header {
+    background-image: url(../Imagenes/responsive.custom.jpg);
+    background-size: 100vw 100vh;
+    text-align: right; }
   .logo {
-    display: none; }
+    height: 70px; }
   .lugares-detalles h2 {
     font-size: 20px; }
   .lugares-detalles p {
