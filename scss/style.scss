@@ -28,8 +28,12 @@ section{
 }
 
 p{
-    font-family: $fuente;
+    font-family: $fuente2;
     text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.1em;
+    
 }
 
 @media (max-width: 1024px) {

@@ -11,6 +11,7 @@
 </head>
 <body>
     <h1>Reserva</h1>
+    <section class="form-consulta">
     <form action="enviar.php" method="POST">   
         <label for="nombre">Nombre:</label>
         <input type="text" name="nombre" placeholder="Nombre"  required="">
@@ -25,7 +26,7 @@
         <input type="email" name="email" placeholder="ejemplo@gmail.com" required="">
         <br><br>
         <label for="telefono">Numero de Teléfono:</label>
-        <input type="text" name="numero_telefono" placeholder="Documento de Identidad" required="">
+        <input type="text" name="numero_telefono" placeholder="Nro de Teléfono" required="">
         <br><br>
         <label for="sexo">Hombre:</label>
         <input type="radio" name="sexo">
@@ -34,19 +35,20 @@
         <label for="sexo">Otro:</label>
         <input type="radio" name="sexo">
         <br><br>
-        <label for="habitacion">Habitación:</label>
-        <select name="habitaciones" id="">
-        <option value="">Bar de mou (6)</option> 
-        <option value="">Homero y Margie (4)</option>
-        <option value="">KrostyBurger (2)</option>
-      </select><br><br>
         <label for="comentario">Comentario:</label><br>
         <textarea name="comentario" id="" cols="70" rows="5" required=""></textarea>
         <br> <br>
         <input type="submit" value="Enviar" class="boton">
-        <input type="reset" value="Borrar" class="boton">
+        <input type="reset" value="Borrar" class="boton"> <br><br>
     </fieldset>
 </form>
+<div class="volver_inicio">
+<a href="index.html"><ion-icon name="arrow-back-outline" class="volver"></ion-icon>
+<a href="index.html" class="volver">Volver al Inicio</a>
+</div>
+
+</section>
+<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 </body>
 
 </html>
